@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrosel</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css" media="all">
+    <link rel="stylesheet" href="assets/css/mobile_style.css" media='screen and (max-width:992px)'>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slides">
+            <div class="slide">
+                <div class="number-text"> 1 / 4</div>
+                <picture>
+                    <source media="(max-width: 992px)" srcset="https://picsum.photos/id/10/400/300">
+                    <source media="(min-width: 993px)" srcset="https://picsum.photos/id/10/1500/600">
+                    <img src="https://i.picsum.photos/id/10/4000/2500.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" alt="">
+                </picture>
+                <div class="caption">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="slide ">
+                <div class="number-text"> 2 / 4</div>
+                <picture>
+                    <source media="(max-width: 992px)" srcset="https://picsum.photos/id/100/400/300">
+                    <source media="(min-width: 993px)" srcset="https://picsum.photos/id/100/1500/600">
+                    <img src="https://i.picsum.photos/id/100/4000/2500.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" alt="">
+                </picture>
+            </div>
+            <div class="slide ">
+                <div class="number-text"> 3 / 4</div>
+                <picture>
+                    <source media="(max-width: 992px)" srcset="https://picsum.photos/id/1000/400/300">
+                    <source media="(min-width: 993px)" srcset="https://picsum.photos/id/1000/1500/600">
+                    <img src="https://i.picsum.photos/id/1000/4000/2500.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" alt="">
+                </picture>
+            </div>
+            <div class="slide ">
+                <div class="number-text"> 4 / 4</div>
+                <picture>
+                    <source media="(max-width: 992px)" srcset="https://picsum.photos/id/1015/400/300">
+                    <source media="(min-width: 993px)" srcset="https://picsum.photos/id/1015/1500/600">
+                    <img src="https://i.picsum.photos/id/1015/4000/2500.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" alt="">
+                </picture>
+            </div>
+            <div class="btn-move">
+                <a href="" class="prev" onclick="plusSlide(event, -1, 'right')"><i class='bx bxs-left-arrow' ></i></a>
+                <a href="" class="next" onclick="plusSlide(event, 1, 'left')"><i class='bx bxs-right-arrow'></i></a>
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

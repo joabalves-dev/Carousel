@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  transition: width 0.4s;
+}
+
+.slides {
+  position: relative;
+}
+
+.slide {
+  position: relative;
+  opacity: 0;
+}
+
+.slide.fade-left{
+    transform: translateX(-20%);
+}
+
+.slide.fade-right{
+    transform: translateX(20%);
+}
+
+.slide picture img {
+  width: 100%;
+}
+
+.number-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+/* Arros move slides */
+
+.btn-move {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* dots */
+.dots {
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: block;
+}
+
+.dot.active {
+  opacity: 0.7;
+}
+
+/* Animation slide */
+
+.fade-left{
+    animation: fade 0.4s ease-in-out forwards;
+}
+
+.fade-right{
+    animation: fade 0.4s ease-in-out forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
